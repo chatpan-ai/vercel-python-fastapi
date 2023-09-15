@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello from FastAPI!"}
+    return {"message": "Hello from FastAPI with PostBot"}
 
 @app.post("/postbot/entry")
 async def postbot(request_body: dict):
